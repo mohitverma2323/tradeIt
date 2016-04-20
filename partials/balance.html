@@ -1,12 +1,13 @@
 <div>
     <center><h2>Balance Sheet:</h2></center>
 </div>
-
+<div class="table-responsive">
 <table border="1" class="table">
     <th>Name</th>
     <th>Amount</th>
-    <tr ng-repeat="record in records">
-      <td>{{balance.name}}</td>
-      <td>{{balance.amount}}</td>
+    <tr ng-repeat="bal in balance">
+      <td>{{bal.name}}</td>
+      <td>{{bal.amount}}</td>
     </tr>
   </table>
+</div>

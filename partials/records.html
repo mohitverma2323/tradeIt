@@ -2,14 +2,14 @@
     <center><h2>Recent trades:</h2></center>
 </div>
 <center>
-<table>
+    <div class="table-responsive">
+   <table class="table">
     <th>Date</th>
     <th>Name</th>
     <th>Item</th>
     <th>Quantity</th>
     <th>Rate</th>
     <th>Amount</th>
-    <th>Type</th>
     <tr ng-repeat="record in records">
       <td>{{record.date}}</td>
       <td>{{record.name}}</td>
@@ -17,7 +17,7 @@
       <td>{{record.quantity}}</td>
       <td>{{record.rate}}</td>
       <td>{{record.amount}}</td>
-      <td>{{record.type}}</td>
-    </tr>
+  </tr>
   </table>
+        </div>
 </center>

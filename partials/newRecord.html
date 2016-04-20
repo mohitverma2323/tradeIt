@@ -1,13 +1,14 @@
 <center>
-<form>
-    Date: <input type="date" ng-model='date' /><br>
-    Name: <input type="text" ng-model='name' /><br>
-    Item: <input type="text" ng-model='item' /><br>
-    Quantity: <input type="number" ng-model='quantity' /><br>
-    Rate: <input type="text" ng-model='rate' /><br>
-    Amount: <input type="text" ng-model='amount' /><br>
-    Type: <input type="text" ng-model='type' /><br>
-    <input type="submit" value="Submit" ng-click="addRecord()" />
+<h3>Enter new trade information</h3>
+<br><br>
+<form ng-submit = "addRecord()">
+    Date: <input type="date" ng-model='date' required/><br><br>
+    Name: <input type="text" ng-model='name' required/><br><br>
+    Item: <input type="text" ng-model='item' required/><br><br>
+    Quantity: <input type="number" ng-model='quantity' required/><br><br>
+    Rate: <input type="text" ng-model='rate' required/><br><br>
+    Amount: <input type="text" ng-model='amount' required/><br><br>
+    <input type="submit" value="Submit" />
 </form>
 </center>      
     
