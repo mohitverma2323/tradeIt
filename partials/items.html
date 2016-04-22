@@ -1,0 +1,15 @@
+<div>
+    <center><h2>Item List:</h2></center>
+</div>
+<a href="#/addItem"><button class="btn-lg btn-primary">Add New Item</button></a> 
+<a href="#/addrecord"><button class="btn-lg btn-primary">Add New Trade Record</button></a><br><br>
+<div class="table-responsive">
+<table border="1" class="table">
+    <th>Name</th>
+    <th>Rate</th>
+    <tr ng-repeat="item in items">
+      <td>{{item.name}}</td>
+      <td>{{item.rate}}</td>
+    </tr>
+  </table>
+</div>

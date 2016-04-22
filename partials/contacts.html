@@ -1,0 +1,15 @@
+<div>
+    <center><h2>Contact List:</h2></center>
+</div>
+<a href="#/addContact"><button class="btn-lg btn-primary">Add New Contact</button></a>
+<a href="#/addrecord"><button class="btn-lg btn-primary">Add New Trade Record</button></a><br><br>
+<div class="table-responsive">
+<table border="1" class="table">
+    <th>Name</th>
+    <th>Mobile Number</th>
+    <tr ng-repeat="con in contacts">
+      <td>{{con.name}}</td>
+      <td>{{con.phoneNumber}}</td>
+    </tr>
+  </table>
+</div>

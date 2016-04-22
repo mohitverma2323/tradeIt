@@ -2,14 +2,14 @@
 <h3>Enter new trade information</h3>
 <br><br>
 <form ng-submit = "addRecord()">
-    Date: <input type="date" ng-model='date' required/><br><br>
-    Name: <input type="text" ng-model='name' required/><br><br>
-    Item: <input type="text" ng-model='item' required/><br><br>
+    Date: <input class="datepicker" type="date" ng-model='date' required/><br><br>
+    Name: <select ng-model='name'  ng-options='con.name for con in contactList'></select><br><br>
+    Item: <select ng-model='item'  ng-options='item.name for item in itemList'></select><br><br>
     Quantity: <input type="number" ng-model='quantity' required/><br><br>
-    Rate: <input type="text" ng-model='rate' required/><br><br>
-    Amount: <input type="text" ng-model='amount' required/><br><br>
+    Rate: <input type="text" ng-model='rate' required />{{item.rate}}<br><br>
+    Total Amount: <div>{{rate * quantity}}</div><br><br>
     <input type="submit" value="Submit" />
 </form>
-</center>      
+</center>       
     
     
